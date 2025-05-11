@@ -1,3 +1,6 @@
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class Lab {
     /**
      * An exception is an unexpected event that occurs during our program.
@@ -18,7 +21,8 @@ public class Lab {
      * This also means that you should NOT write a try/catch block in this method, as the tests are expecting to have
      * a method thrown to it. A try/catch block would handle the exception within the method.
      */
-    public void mustThrow() {
-
+    public void mustThrow() throws Exception {
+        throw new Exception();
+            
     }
 }
